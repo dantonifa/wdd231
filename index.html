@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger_view.css">
+        <script src="scripts/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -34,7 +35,7 @@
         <nav>
             <a id="menu" href="#" title="Menu"></a>
             <ul class="nav-link">
-                <li><a href = "wdd230/index.html" class="active" >Home</a></li>
+                <li><a href = "C:\Users\David Antonio\Documents\BYU\WDD 231 WEB FRONTED DEVELOPMENT I\wdd231\index.html" class="active" >Home</a></li>
                 <li><a href = "chamber/index.html">Chamber Project</a></li>
                 <li><a href = "lesson03/chamber-site-plan.html">Final Project</a></li>
             </ul>
@@ -44,26 +45,42 @@
                 The heading "Home" rendered using an <h1> tag.
                 Three <section> tags with headings <h2> -->
         
-        <div id="main-title">
-            <h1> HOME</h1>
-        </div>
-        <section id="about-me">
-            <h2>About me</h2>
-            <p>My name is David Antonio Fajardo Ponce. I am from Honduras. 
-                I served as full-time missionary of the Church of Jesus Christ 
-                of Latter-Day Saints in Guatemala, that, according to the prophet Joseph Smith, 
-                is part of the Land of Nephi. I am a Science teacher. I am single, with a son,
-                who lives with me. I love to study the book of Mormon, to work in the Temple, 
-                to cook, gardening, to play chess, to watch CSI movies, and to spend time 
-                with my family.</p>
-        </section>
-        <section id="student-photo">
-            <h2>Student Photo</h2>
-            <img src="images/profile_picture.webp" alt="Student Photo">
-        </section>
-        <section id="web-certificates">
-            <h2>Web Certificates</h2>
-        </section>
+            <div id="main-title">
+                <h1> HOME</h1>
+            </div>
+            <div id="my-profile">
+                <section id="about-me">
+                    <h2>About me</h2>
+                    <p>My name is David Antonio Fajardo Ponce. I am from Honduras. 
+                        I served as full-time missionary of the Church of Jesus Christ 
+                        of Latter-Day Saints in Guatemala, that, according to the prophet Joseph Smith, 
+                        is part of the Land of Nephi. I am a Science teacher. I am single, with a son,
+                        who lives with me. I love to study the book of Mormon, to work in the Temple, 
+                        to cook, gardening, to play chess, to watch CSI movies, and to spend time 
+                        with my family.
+                    </p>
+                </section>
+                <section id="student-photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/profile_picture.webp" alt="Student Photo">
+                </section>
+            </div>
+            <section id="web-certificates">
+                <div id="title">
+                    <h2>Web Certificates</h2>
+                </div>
+                <div class="courses">
+                    <ul>
+                        <li><button type="button">All</button></li>
+                        <li><button type="button">CSE</button></li>
+                        <li><button type="button">WDD</button></li>
+                    </ul>
+                    <div class="credits">
+                        <p>Total Course Credits: <span id="total-credits">0</span></p>
+                    </div>
+                </div>
+                
+            </section>
         </main>
         <footer>
             <div id="flag-container">
@@ -73,14 +90,17 @@
                     </p>
                 </div>
                 <div id="flag">
-                    <img src = "images/Honduras_flag.png" alt = "Honduras Flag">
+                    <img src = "images/Honduras_flag.webp" alt = "Honduras Flag">
                 </div>
+            </div>
+            <div id="last_modified">
                 <p>
                 Last Modified: <span  id="lastModified"></span>
                 </p>
             </div>
+            
         </footer>
         <script src="scripts/getdates.js"></script>
-        <script src="scripts/weather.js"></script>
     </body>
 </html>
+
