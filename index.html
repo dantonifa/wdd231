@@ -69,14 +69,19 @@
                 <div id="title">
                     <h2>Web Certificates</h2>
                 </div>
-                <div class="courses">
+                <div class="courses-container">
                     <ul>
-                        <li><button type="button">All</button></li>
-                        <li><button type="button">CSE</button></li>
-                        <li><button type="button">WDD</button></li>
+                        <li><button type="button" id="all-button">All</button></li>
+                        <li><button type="button" id="cse-button">CSE</button></li>
+                        <li><button type="button" id="wdd-button">WDD</button></li>
                     </ul>
+                    <div id="course-list">
+                        <!-- Courses will be dynamically inserted here -->
+                        
+                    </div>
+                    
                     <div class="credits">
-                        <p>Total Course Credits: <span id="total-credits">0</span></p>
+                        <p>Total number of Credits of courses listed above: <span id="total-credits">0</span></p>
                     </div>
                 </div>
                 
@@ -103,4 +108,5 @@
         <script src="scripts/getdates.js"></script>
     </body>
 </html>
+
 
