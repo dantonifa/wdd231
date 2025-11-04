@@ -19,7 +19,7 @@ const courses = [
     description:
       "This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.",
     technology: ["HTML", "CSS"],
-    completed: false,
+    completed: true,
   },
   {
     subject: "CSE",
@@ -41,7 +41,7 @@ const courses = [
     description:
       "This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.",
     technology: ["C#"],
-    completed: false,
+    completed: true,
   },
   {
     subject: "WDD",
@@ -66,40 +66,66 @@ const courses = [
     completed: false,
   },
 ];
-/*Dynamically display all the courses in the certificate section as shown
- in the example above. The courses that you have completed must be marked
- in a different way versus those that you have not completed. Use your 
- page color scheme. The page should adjust automatically if the data 
- source changes.*/
-
-/*add event listeners to the buttons to filter the courses*/
-/*When clicking on the buttons of the course list, filter the courses
- to show only those that match the selected certificate (All, CSE, WDD).*/
-document.querySelectorAll(".courses ul li button").forEach((button) => {
-  button.addEventListener("click", (e) => {
-    const filter = button.innerText;
-    displayCourses(filter);
-  });
+/*When  the  button with the subject CSE is clicked,
+display the tabs of the courses that belongs
+to the subject CSE only, that are completed
+or true. Use the array filter method.*/
+/*Dynamically display all the courses in the certificate section. 
+The courses that you have completed must be marked in a different 
+way versus those that you have not completed. 
+Use your page color scheme. The page should adjust automatically 
+if the data source changes.*/
+const button_1 = document.getElementById("cse-button");
+const button_2 = document.getElementById("wdd-button");
+const button_3 = document.getElementById("all-button");
+const courseList = document.getElementsByClassName("courses-container")[0];
+const totalCreditsSpan = document.getElementById("total-credits");
+let totalCredits = 0;
+/*If the button with the subject CSE is clicked,
+go to the array and filter the courses that belongs
+to the subject CSE only, that are completed
+or true. Use the array filter method.*/
+button_1.addEventListener("click", () => {
+  const cseCourses = courses.filter(
+    (course) => course.subject === "CSE" && course.completed
+  );
+  displayCourses(cseCourses);
 });
-function displayCourses(filter) {
-  const coursesContainer = document.querySelector(".courses");
-  let filteredCourses = courses;
-  if (filter !== "All") {
-    filteredCourses = courses.filter((course) => course.subject === filter);
-  }
-  let coursesHTML = "<ul>";
-  let totalCredits = 0;
-  filteredCourses.forEach((course) => {
-    const courseClass = course.completed ? "completed" : "not-completed";
-    coursesHTML += `<li class="${courseClass}"><button type="button">${course.subject} ${course.number}</button></li>`;
+button_2.addEventListener("click", () => {
+  const wddCourses = courses.filter(
+    (course) => course.subject === "WDD" && course.completed
+  );
+  displayCourses(wddCourses);
+});
+button_3.addEventListener("click", () => {
+  displayCourses(courses);
+});
+function displayCourses(courseArray) {
+  /*do not delete the buttons of courses-container */
+  /*display the tabs of the courses that belongs
+    to the subject CSE only, that are completed
+    or true. Use the array filter method, in 
+    the course-list div*/
+  const courseListDiv = document.getElementById("course-list");
+  courseListDiv.innerHTML = "";
+  totalCredits = 0;
+  courseArray.forEach((course) => {
+    const courseTab = document.createElement("div");
+    courseTab.classList.add("course-tab");
+    courseTab.innerHTML = ` 
+        <h3>${course.title}</h3>
+    `;
+    /*add a different style for completed courses, 
+    using a class from CSS*/
+    if (course.completed) {
+      courseTab.classList.add("completed");
+    } else {
+      courseTab.classList.add("not-completed");
+    }
+    courseListDiv.appendChild(courseTab);
+    /*Calculate the sum of credits*/
     totalCredits += course.credits;
   });
-  coursesHTML += "</ul>";
-  coursesContainer.innerHTML =
-    coursesHTML +
-    `
-        <div class="credits">
-            <p>Total Course Credits: <span id="total-credits">${totalCredits}</span></p>
-        </div>
-    `;
+
+  totalCreditsSpan.textContent = totalCredits;
 }
