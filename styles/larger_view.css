@@ -317,13 +317,38 @@
         border-color: black;
         background-color: rgba(255, 255, 255, 0.705);
     }
-    main #web-certificates .courses-container #course-list ul li a {
+    /* Style the button inside each course list item */
+    main #web-certificates .courses-container ul li .button {
         display:grid;
+        width:120px;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        padding:10px;
         font-size: 30px;
         font-weight: bold;
         color: black;
         text-decoration: none;
     }
+    main #web-certificates .courses-container ul li .button:hover {
+        background-color: rgba(0, 255, 140, 0.267);
+        cursor: pointer;
+    }
+    main #web-certificates .courses-container ul li .button:active {
+        background-color: rgba(21, 62, 244, 0.976);
+        color: white;
+    }
+    main #web-certificates .courses-container ul li .button:focus {
+        outline: 2px solid blue;
+    }
+    main #web-certificates .courses-container ul li .button:disabled {
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
+    }
+    
     
     /* The courses that you have completed must be marked in a
     different way versus those that you have not completed.
@@ -439,5 +464,6 @@
         font-weight: bold;
         color: black;
     }
-    }
+}
+
 
