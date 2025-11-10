@@ -720,7 +720,7 @@
         grid-row-end: 2;
         /*place the social icons on the same horizontal line*/
         grid-template-columns: repeat(3, 150px);
-        margin-right: 30px;
+        margin-right: auto;
         margin-left: auto;
         width: auto;
         height: auto;
@@ -731,10 +731,9 @@
         display: grid;
         width: 80px;
         height: 80px;
-        margin: 0 10px;
+        margin-right:auto;
+        margin-left: auto;
     }
-    /*Place social media with dimensions of 80px by 80px 
-    on the same horizontal line*/
     footer #social_media img {
         display: grid;
         grid-template-columns: repeat(3, 150px);
@@ -742,7 +741,7 @@
         height: 64px;
         object-fit: cover;
         margin-left:auto;
-        margin-right:30px;
+        margin-right:auto;
     }
     footer #student_data {
         display: grid;
@@ -757,6 +756,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
