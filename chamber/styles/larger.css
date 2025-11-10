@@ -735,7 +735,8 @@
         width: auto;
         height: 64px;
         object-fit: cover;
-        
+        margin-left:auto;
+        margin-right:auto;
     }
     footer #student_data {
         display: grid;
@@ -750,6 +751,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
