@@ -734,7 +734,7 @@
         margin-right:auto;
         margin-left: auto;
     }
-    footer #social_media img {
+    footer #social_media a img {
         display: grid;
         grid-template-columns: repeat(3, 150px);
         width: auto;
@@ -756,6 +756,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
