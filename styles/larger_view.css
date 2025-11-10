@@ -75,7 +75,6 @@
         border-color: black;
         background-color: yellow;
     }
-    
     nav #menu{
         display:flex;
         flex-direction: row;
@@ -87,7 +86,6 @@
         margin-bottom: 0px;
         padding-top: 0;
         padding-bottom: 0;
-        
     }
     nav ul{
         display:inline-flex;
@@ -285,7 +283,6 @@
         border-color: black;
         background-color: rgba(173, 216, 230, 0.705);
     }
-
     main #web-certificates .courses-container #course-list ul {
         display:grid;
         grid-template-columns: repeat(1, 1fr);
@@ -348,8 +345,6 @@
         color: white;
         cursor: not-allowed;
     }
-    
-    
     /* The courses that you have completed must be marked in a
     different way versus those that you have not completed.
     Use your page color scheme. The page should adjust
@@ -386,7 +381,6 @@
         font-weight: bold;
         color: black;
     }
-    
     nav a.active,
     
     nav .active {
@@ -434,7 +428,6 @@
         float:right;
         margin-left:10px;
     }
-
     footer img {
         display:flex;
         float:right;
@@ -465,5 +458,6 @@
         color: black;
     }
 }
+
 
 
