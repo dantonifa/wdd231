@@ -21,6 +21,16 @@
         height: 100px;
         background-color: limegreen;
     }
+    header .heading {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    
     header .sps_logo_img {
         display: flex;
         object-fit: cover;
@@ -53,8 +63,30 @@
         font-size: 35px;
         font-weight: bold;
         color: black;
-        align-items: left;
+        text-align: left;
         justify-content: left;
+    }
+    .heading h1 {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading p a {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     nav {
         display: grid;
@@ -116,7 +148,7 @@
         padding: 0;
         background-image:  url(../images/sps_landscape.png);
         object-fit: contain;  
-        background-size: scale;
+        background-size: cover;
         overflow-y: hidden;
         background-repeat: repeat;
         background-position: top;
@@ -745,4 +777,5 @@
         margin: 0;
     }
 }
+
 
