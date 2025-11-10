@@ -30,7 +30,6 @@
         padding: 0;
         margin: 0;
     }
-    
     header .sps_logo_img {
         display: flex;
         object-fit: cover;
@@ -360,7 +359,6 @@
         margin-left:auto;
         margin-right:0px;
     }
-    
     main #el-cusuco{
         display:grid;
         grid-row-start:1;
@@ -755,6 +753,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
