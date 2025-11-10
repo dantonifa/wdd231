@@ -720,6 +720,7 @@
         grid-row-end: 2;
         /*place the social icons on the same horizontal line*/
         grid-template-columns: repeat(3, 80px);
+        margin-right: 80px;
         width: auto;
         height: auto;
         align-items: center;
@@ -749,6 +750,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
