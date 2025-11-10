@@ -114,7 +114,7 @@
         padding: 0;
         background-image:  url(../images/sps_landscape.png);
         object-fit: contain;  
-        background-size: scale;
+        background-size: cover;
         overflow-y: hidden;
         background-repeat: repeat;
         background-position: top;
@@ -129,7 +129,7 @@
         margin-top: 25px;
         vertical-align: middle;
         text-decoration: double;
-        grid-template-rows: 1;
+        grid-template-rows: 1fr;
         grid-row-start: 3;
         grid-row-end: 4;
         font-size: 2.8em;
@@ -138,7 +138,7 @@
     }
     .main-form{
         display:grid;
-        grid-template-rows:1;
+        grid-template-rows:1fr;
         width:80%;
         height:auto;
     }
@@ -163,7 +163,6 @@
         align-items: center;
         width:100%;
         background-color: greenyellow;
-    
     }
     .main-container .spotlight{
         display:flex;
@@ -197,7 +196,6 @@
         justify-content: center;
         font-size: 20px;
     }
-
     main{
         display:grid;
         grid-template-rows: 350px 350px 350px 350px 350px 350px;
@@ -254,7 +252,6 @@
         object-fit:cover;
         margin-left:auto;
         margin-right:auto;
-        
     }
     main #curruste{
         display:grid;
@@ -444,7 +441,7 @@
         column-width:auto;
         height:auto;
         margin-bottom:25px;
-        padding-bottom:25
+        padding-bottom:25px;
         margin-top:auto;
     }
     main #bazar h2{
@@ -543,17 +540,18 @@
         padding: 0;
         margin: 0;
     }
-    footer #student_data {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
+        footer #student_data {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            width: auto;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
     }
