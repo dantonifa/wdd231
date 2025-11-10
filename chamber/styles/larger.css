@@ -731,12 +731,11 @@
     on the same horizontal line*/
     footer #social_media img {
         display: grid;
-        grid-template-columns: repeat(3, 80px);
+        grid-template-columns: repeat(3, 100px);
         width: auto;
         height: 64px;
         object-fit: cover;
-        margin-right: 80px;
-        margin-left:80px;
+        
     }
     footer #student_data {
         display: grid;
@@ -751,6 +750,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
