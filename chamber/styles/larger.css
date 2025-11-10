@@ -733,6 +733,7 @@
         height: 80px;
         margin-right:auto;
         margin-left: auto;
+        text-align: center;
     }
     footer #social_media a img {
         display: grid;
@@ -756,6 +757,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
