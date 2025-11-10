@@ -727,6 +727,12 @@
         align-items: center;
         justify-content: center;
     }
+    footer #social_media a {
+        display: grid;
+        width: 80px;
+        height: 80px;
+        margin: 0 10px;
+    }
     /*Place social media with dimensions of 80px by 80px 
     on the same horizontal line*/
     footer #social_media img {
@@ -751,6 +757,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
