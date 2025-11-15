@@ -1,810 +1,165 @@
-@media screen and (min-width: 481px){
-    body {
-        display: grid;
-        grid-template-rows: 1fr auto auto auto;
-        margin-left:auto;
-        margin-right:auto;
-        padding: 0;
-        width: 70%;
-        height: auto;
-        background-color: rgba(0, 255, 140, 0.267);
-    }
-    header {
-        display: grid;
-        grid-template-columns: 80px 1fr;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-left:auto;
-        margin-right:auto;
-        padding: 0;
-        width: 80%;
-        height: 100px;
-        background-color: limegreen;
-    }
-    header .heading {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        width: auto;
-        height: 100px;
-        padding: 0;
-        margin: 0;
-    }
-    
-    header .sps_logo_img {
-        display: flex;
-        object-fit: cover;
-        width: 80px;
-        height: auto;
-        padding: 0;
-        margin: 6px 6px 6px 6px;
-    }
-    header .sps_logo_img #sps-logo {
-        display: flex;
-        object-fit: cover;
-        width: auto;
-        height: 80px;
-        padding: 0;
-        margin: 0;
-    }
-    header #sps_logo_text {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        width: auto;
-        height: 100px;
-        padding: 0;
-        margin: 0;
-    }
-    header #sps_logo_text h1 {
-        display: grid;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 35px;
-        font-weight: bold;
-        color: black;
-        text-align: left;
-        justify-content: left;
-    }
-    .heading h1 {
-        display: grid;
-        margin: 0;
-        padding: 0;
-        font-size: 2.5em;
-        font-weight: bold;
-        color: black;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    .heading p a {
-        display: grid;
-        margin: 0;
-        padding: 0;
-        font-size: 1.5em;
-        font-weight: bold;
-        color: blue;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    nav {
-        display: grid;
-        grid-template-rows: 1fr auto;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-left:auto;
-        margin-right:auto;
-        background-color: yellow;
-        width: 80%;
-        height: 80px;
-    }
-    nav ul {
-        display: grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: 1fr;
-        text-align: center;
-        margin:20px 20px 20px 20px;
-        list-style-type: none;
-    }
-    nav ul li {
-        display: inline;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        color: black;
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    nav ul li a {
-        display: inline;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-    nav ul li a:hover {
-        color: limegreen;
-    }
-    nav ul li a:active {
-        color: limegreen;
-    }
-    #chamber_hero {
-        display:grid;
-        grid-row-start:3;
-        grid-row-end:4;
-        width:80%;
-        height:300px;
-        margin-left:auto;
-        margin-right:auto;
-        padding: 0;
-        background-image:  url(../images/sps_landscape.png);
-        object-fit: contain;  
-        background-size: cover;
-        overflow-y: hidden;
-        background-repeat: repeat;
-        background-position: top;
-        justify-content: center;
-        align-items: center;
-    }
-    #chamber_hero #call_to_action h2 {
-        display: flex;
-        position: relative;
-        text-align: center;
-        margin-left: 25px;
-        margin-top: 25px;
-        vertical-align: middle;
-        text-decoration: double;
-        font-size: 2.8em;
-        font-weight: bold;
-        color: white;
-    }
-    .main-container{
-        display:grid;
-        grid-row-start:4;
-        grid-row-end:5;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:auto;
-        margin-bottom:auto;
-        grid-template-rows: 1fr 1fr;
-        width:80%;
-        background-color:greenyellow;
-        color:black;
-        font-weight:bold;
-        font-size: 30px;
-    }
-    .main-container #events{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-template-columns: 0.5fr 0.5fr;
-        text-align:center;
-        border-radius: 10px;
-        border-style: solid;
-        border-width:5px; 
-        border-color:black;
-    }
-    #events .current-event{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:2;
-        width:90%;
-        margin-left:40px;
-        margin-top:20px;
-        margin-right:20px;
-        margin-bottom:20px;
-        border-radius:10px;
-        border-style: solid;
-        border-width:10px;   
-        border-color:blue;
-        background-color: aliceblue;
-        font-size:40px;
-    }
-    #events .spotlight{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:90%;
-        margin-left:20px;
-        margin-top:20px;
-        margin-right:20px;
-        margin-bottom:20px;
-        border-radius:10px;
-        border-style: solid;
-        border-width:10px;   
-        border-color:blue;
-        background-color: rgb(149, 236, 247);
-        font-size:40px;
-        /*center vertically the image*/
-        align-items: center;
-    }
-    #events .spotlight img{
-        display:grid;
-        width:100%;
-        height:auto;
-        object-fit:cover;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:10px;
-        margin-bottom:10px;
-        
-    }
-    .main-container .weather{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        grid-template-columns: 1fr 1fr;
-        border-radius: 10px;
-        border-style: solid;
-        border-width:5px; 
-        text-align:center;
-        border-color:black;
-        border-width:2px;
-        border-style: solid;
-    }
-    .main-container .weather #weather-data{
-        display:grid;
-        grid-column-start:1;
-        grid-column-end:2;
-        width:90%;
-        margin-left:40px;
-        margin-top:20px;
-        margin-right:20px;
-        margin-bottom:20px;
-        border-radius:10px;
-        border-style: solid;
-        border-width:10px;   
-        border-color:blue;
-        background-color: aliceblue;
-        font-size:40px;
-    }
-    .main-container .weather #forecast{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:2;
-        grid-column-end:3;
-        border-style: solid;
-        border-width:10px;
-        border-color:blue;
-        border-radius: 10px;
-        background-color: aliceblue;
-        text-align:center;
-        margin-left:20px;
-        /*Set the border 20px of the edge of the container*/
-        margin-right:10px;
-        margin-top:20px;
-        margin-bottom:20px;
-        width:90%;
-        font-size: 40px;
-        font-weight: bold;
-        color:black;
-    }
-    #call_to_action h2{
-        display:grid;
-        font-size:2.5em;
-        font-weight:bold;
-        color:black;
-        margin:0;
-        padding:0;
-    }
-    .main-form {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width:80%;
-        height:auto;
-        justify-content: center;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:auto;
-        margin-bottom:auto;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-    }
-    .main-form h2 {
-        font-size: 2em;
-        font-weight: bold;
-        color: black;
-        margin: 0;
-        padding: 0;
-    }
-    .main-form form {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        position: relative;
-    }
-    .main-form form label {
-        display: flex;
-        font-size: 25px;
-        font-weight: bold;
-        color: black;
-        margin: 0;
-        padding: 0;
-    }
-    .main-form form input {
-        display: flex;
-        width: 80%;
-        height: 40px;
-        margin: 10px 0;
-        padding: 0 10px;
-        font-size: 25px;
-        font-weight: bold;
-        color: black;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    .main-form form select{
-        display: flex;
-        width: 80%;
-        height: 40px;
-        margin: 10px 0;
-        padding: 0 10px;
-        font-size: 25px;
-        font-weight: bold;
-        color: black;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    .main #membership-level{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:45px;
-    }
-    .main #membership-level select{
-        height:40px;
-    }
-    .main #membership-level h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    .main #membership-level p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:35px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    .main #membership-level img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    
-    main #el-cusuco{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:350px;
-    }
-    main #el-cusuco h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #el-cusuco p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    main #el-cusuco img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main #curruste{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:auto;
-    }
-    main #curruste h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #curruste p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    main #curruste img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main #merendon{
-        display:grid;
-        grid-row-start:3;
-        grid-row-end:4;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:auto;
-    }
-    main #merendon h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #merendon p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    main #merendon img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main #tara{
-        display:grid;
-        grid-row-start:4;
-        grid-row-end:5;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:auto;
-    }
-    main #tara h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:30px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #tara p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:auto;
-        margin-bottom:auto;
-        padding:0;
-    }
-    main #tara img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main #museo{
-        display:grid;
-        grid-row-start:5;
-        grid-row-end:6;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:auto;
-    }
-    main #museo h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #museo p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    main #museo img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main #bazar{
-        display:grid;
-        grid-row-start:6;
-        grid-row-end:7;
-        grid-template-columns:.5fr .5fr;
-        grid-template-rows:40px auto;
-        margin-left:auto;
-        margin-right:auto;
-        width:80%;
-        height:auto;
-    }
-    main #bazar h2{
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        grid-column-start:1;
-        grid-column-end:3;
-        font-size:35px;
-        text-align:left;
-        padding:0;
-        margin-top:10px;
-        color:blue;
-        font-weight:bold;
-    }
-    main #bazar p{
-        display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        height:auto;
-        grid-column-start:1;
-        grid-column-end:2;
-        font-size:30px;
-        text-align:left;
-        margin-top:20px;
-        padding:0;
-    }
-    main #bazar img{
-        display:grid;
-        grid-column-start:2;
-        grid-column-end:3;
-        width:600px;
-        height:auto;
-        object-fit:cover;
-        margin-top:auto;
-        margin-bottom:auto;
-        margin-left:auto;
-        margin-right:0px;
-    }
-    main .business-cards {
-        display: grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    main .business-cards .card {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        text-align: center;
-    }
-    main .business-cards .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    footer {
-        display: grid;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:10px;
-        margin-bottom:auto;
-        padding: 0;
-        width: 80%;
-        height: auto;
-        font-size:20px;
-        font-weight:bold;
-        background-color: limegreen;
-    }
-    footer #chamber_address {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-    }
-    footer #chamber_address p {
-        display: grid;
-        font-size: 1em;
-        color: black;
-        font-weight: bold;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-    footer #social_media{
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        /*place the social icons on the same horizontal line*/
-        /*Separate each icon by 80px*/
-        grid-template-columns: repeat(3, 100px);
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    footer #social_media a {
-        display: grid;
-        width: 80px;
-        height: 80px;
-        margin: 0 10px;
-        text-align: center;
-    }
-    /*Place social media with dimensions of 80px by 80px 
-    on the same horizontal line*/
-    footer #social_media a img {
-        display: grid;
-        width: auto;
-        height: 64px;
-        object-fit: cover;
-    }
-    footer #student_data {
-        display: grid;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="San Pedro Sula Chamber of Commerce">
+  <meta name="keywords" content="San Pedro Sula, Chamber of Commerce, Honduras">
+  <meta name="author" content="David Antonio Fajardo Ponce">
+  <meta property="og:title" content="San Pedro Sula Chamber of Commerce">
+  <meta property="og:description" content="Business Opportunities in San Pedro Sula">
+  <meta property="og:image" content="images/sps_landscape.png">
+  <meta property="og:url" content="https://dantonifa.github.io/wdd230/chamber/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@dantonifa">
+  <meta name="twitter:title" content="San Pedro Sula Chamber of Commerce">
+  <meta name="twitter:description" content="Business Opportunities in San Pedro Sula">
+  <meta name="twitter:image" content="images/sps_landscape.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" type="text/css" href="styles/larger.css">
+  <link rel="stylesheet" type="text/css" href="styles/medium.css">
+  <link rel="image_src" href="images/sps_landscape.png">
+  <title>San Pedro Sula Chamber of Commerce</title>
+</head>
+<body>
+  <header>
+    <div class="sps_logo_img">
+      <img id="sps-logo" src="images/sps_shield.png" alt="San Pedro Sula Shield">
+    </div>
+    <div id="sps_logo_text">
+      <h1>San Pedro Sula Chamber of Commerce</h1>
+    </div>
+  </header>
+  <nav>
+    <a id="menu" href="#" title="Menu"></a>
+    <ul class="nav-link">
+      <li>
+        <a href="C:\Users\David Antonio\Documents\BYU\wdd 231 web fronted development I\wdd231\index.html">
+            Home
+        </a>
+      </li>
+      <li>
+        <a href="C:\Users\David Antonio\Documents\BYU\wdd 231 web fronted development I\wdd231\chamber\directory.html">
+            Directory
+        </a>
+      </li>
+      <li>
+        <a href="C:\Users\David Antonio\Documents\BYU\wdd 231 web fronted development I\wdd231\chamber\discover.html">
+            Discover
+        </a>
+      </li>
+      <li>
+        <a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd%20231%20web%20fronted%20development%20I/wdd231/chamber/join.html">
+            Join
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <section id="chamber_hero">
+    <div id="call_to_action">
+      <h2>Join the Chamber!</h2>
+    </div>
+  </section>
+  <div class="main-container">
+    <div id="events">
+      <div class="current-event" >
+        <h2>
+            CURRENT EVENT
+        </h2>
+        <p>
+            <strong>Ribbon cutting-Exporting to USA</strong>
+        </p>
+        <p>
+            <strong> When:</strong> 10/10/2024 at 10:00 AM
+        </p>
+        <p>
+            <strong> Expocentro </strong>
+        </p>
+      </div>
+      <div class="spotlight">
+          <img src="images/expocentro.png" alt = "Expocentro">
+      </div>
+    </div>
+    <div class="weather">
+      <div id="weather-data">
+        <h2>
+          ☀️WEATHER
+        </h2>
+        <p>
+          <strong>San Pedro Sula, Honduras</strong>
+        </p>
+        <p>
+          Today Temperature: <span id="temp"></span>°C
+        </p>
+        <p id="weather"></p>
+        <div id="weather-pictures"></div>
+      </div>
+      <div id="forecast">
+        <h2>
+          🌤️3-DAY FORECAST
+        </h2>
+      <!--Weather Forecast for the next three consecutive days-->
+        <div id="forecast-days"></div>
+      </div>
+    </div>
+    <!--Three business cards-->
+    <div class="business-cards">
+      <div class="card">
+        <h3>Business Name 1</h3>
+        <p class="email"></p>
+        <p class="phone"></p>
+        <p class="url"></p>
+      </div>
+      <div class="card">
+        <h3>Business Name 2</h3>
+        <p class="email"></p>
+        <p class="phone"></p>
+        <p class="url"></p>
+      </div>
+      <div class="card">
+        <h3>Business Name 3</h3>
+        <p class="email"></p>
+        <p class="phone"></p>
+        <p class="url"></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="chamber_address">
+      <p>San Pedro Sula Chamber of Commerce</p>
+      <p>123 Main Street</p>
+      <p>San Pedro Sula, Honduras</p>
+      <p>Phone: 504-2555-5555</p>
+    </div>
+    <!--FB, YouTube, and LinkedIn icons-links-->
+    <div id="social_media">
+      <a> 
+        <img src="images/facebook_icon.svg" alt="Facebook">
+      </a>
+      <a>
+        <img src="images/youtube_icon.svg" alt="YouTube">
+      </a>
+      <a>
+        <img src="images/linkedin_icon.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <div id="student_data">
+      <p>
+        &copy;<span id="currentyear"></span>
+        <span>San Pedro Sula Chamber of Commerce</span>
+        | David Antonio Fajardo Ponce | WDD 230 Project | 
+      </p>
+      <p>
+        Last Modified: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/getdates.js"></script>
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>
+
 
 
 
