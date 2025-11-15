@@ -21,4 +21,24 @@ fetch(apiURL)
     const weather = data.weather[0].description;
     document.getElementById("weather").innerText = weather;
   });
+/*add three (3) consecutive days temperature forecast that is properly labeled.
+after temp day, or, starting from tomorrow.*/
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${APIkey}`;
+fetch(forecastURL)
+  .then((response) => response.json())
+  .then((data) => {
+    let forecastDays = "";
+    for (let i = 1; i <= 3; i++) {
+      const forecastDate = new Date(data.list[i * 8 - 1].dt_txt);
+      const options = { weekday: "long" };
+      const dayName = forecastDate.toLocaleDateString("en-US", options);
+      const temp = data.list[i * 8 - 1].main.temp;
+      forecastDays += `<div class="forecast-day">
+                         <h3>${dayName}</h3>
+                         <p>Temp: ${temp} °C</p>
+                       </div>`;
+    }
+    document.getElementById("forecast-days").innerHTML = forecastDays;
+  });
   
+
