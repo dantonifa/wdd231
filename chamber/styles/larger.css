@@ -30,6 +30,7 @@
         padding: 0;
         margin: 0;
     }
+    
     header .sps_logo_img {
         display: flex;
         object-fit: cover;
@@ -187,6 +188,10 @@
         grid-row-end:2;
         grid-template-columns: 0.5fr 0.5fr;
         text-align:center;
+        border-radius: 10px;
+        border-style: solid;
+        border-width:5px; 
+        border-color:black;
     }
     #events .current-event{
         display:grid;
@@ -194,17 +199,35 @@
         grid-row-end:2;
         grid-column-start:1;
         grid-column-end:2;
-        width:100%;
+        width:90%;
+        margin-left:40px;
+        margin-top:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+        border-radius:10px;
+        border-style: solid;
+        border-width:10px;   
+        border-color:blue;
+        background-color: aliceblue;
+        font-size:40px;
     }
     #events .spotlight{
         display:grid;
         grid-column-start:2;
         grid-column-end:3;
-        width:auto;
-        margin-left:10px;
-        margin-right:10px;
-        margin-top:auto;
-        margin-bottom:auto;
+        width:90%;
+        margin-left:20px;
+        margin-top:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+        border-radius:10px;
+        border-style: solid;
+        border-width:10px;   
+        border-color:blue;
+        background-color: rgb(149, 236, 247);
+        font-size:40px;
+        /*center vertically the image*/
+        align-items: center;
     }
     #events .spotlight img{
         display:grid;
@@ -215,33 +238,58 @@
         margin-right:auto;
         margin-top:10px;
         margin-bottom:10px;
+        
     }
-    #events .weather{
+    .main-container .weather{
         display:grid;
         grid-row-start:2;
         grid-row-end:3;
-        grid-template-columns:.5fr .5fr;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 10px;
+        border-style: solid;
+        border-width:5px; 
         text-align:center;
+        border-color:black;
+        border-width:2px;
+        border-style: solid;
     }
-    .weather #weather-data{
+    .main-container .weather #weather-data{
         display:grid;
         grid-column-start:1;
         grid-column-end:2;
-        text-align:center;
-        width:50%;
+        width:90%;
+        margin-left:40px;
+        margin-top:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+        border-radius:10px;
+        border-style: solid;
+        border-width:10px;   
+        border-color:blue;
+        background-color: aliceblue;
+        font-size:40px;
     }
-    #call_to_action{
+    .main-container .weather #forecast{
         display:grid;
-        grid-row-start:2;
-        grid-row-end:3;
-        grid-column-start:1;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:2;
         grid-column-end:3;
+        border-style: solid;
+        border-width:10px;
+        border-color:blue;
+        border-radius: 10px;
+        background-color: aliceblue;
         text-align:center;
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:auto;
-        margin-bottom:auto;
-        width:100%;
+        margin-left:20px;
+        /*Set the border 20px of the edge of the container*/
+        margin-right:10px;
+        margin-top:20px;
+        margin-bottom:20px;
+        width:90%;
+        font-size: 40px;
+        font-weight: bold;
+        color:black;
     }
     #call_to_action h2{
         display:grid;
@@ -359,6 +407,7 @@
         margin-left:auto;
         margin-right:0px;
     }
+    
     main #el-cusuco{
         display:grid;
         grid-row-start:1;
@@ -719,9 +768,8 @@
         grid-row-start: 1;
         grid-row-end: 2;
         /*place the social icons on the same horizontal line*/
-        grid-template-columns: repeat(3, 150px);
-        margin-right: auto;
-        margin-left: auto;
+        /*Separate each icon by 80px*/
+        grid-template-columns: repeat(3, 100px);
         width: auto;
         height: auto;
         align-items: center;
@@ -731,18 +779,16 @@
         display: grid;
         width: 80px;
         height: 80px;
-        margin-right:auto;
-        margin-left: auto;
+        margin: 0 10px;
         text-align: center;
     }
+    /*Place social media with dimensions of 80px by 80px 
+    on the same horizontal line*/
     footer #social_media a img {
         display: grid;
-        grid-template-columns: repeat(3, 150px);
         width: auto;
         height: 64px;
         object-fit: cover;
-        margin-left:auto;
-        margin-right:auto;
     }
     footer #student_data {
         display: grid;
@@ -752,11 +798,14 @@
         grid-row-end: 2;
         width: auto;
         height: auto;
+        padding: 0;
+        margin: 0;
         align-items: center;
         justify-content: center;
         font-weight: bold;
     }
 }
+
 
 
 
