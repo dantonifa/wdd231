@@ -155,17 +155,25 @@
         justify-content: center;
         align-items: center;
     }
-    #chamber_hero #call_to_action h2 {
-        display: flex;
-        position: relative;
-        text-align: center;
-        margin-left: 25px;
-        margin-top: 25px;
-        vertical-align: middle;
-        text-decoration: double;
-        font-size: 2.8em;
-        font-weight: bold;
-        color: white;
+    #call_to_action {
+        display:grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        width:80%;
+        height:100px;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #call_to_action h2{
+        display:grid;
+        font-size:2.5em;
+        font-weight:bold;
+        color:black;
+        margin:0;
+        padding:0;
     }
     .main-container{
         display:grid;
@@ -818,6 +826,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
