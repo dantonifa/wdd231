@@ -299,27 +299,7 @@
         font-weight: bold;
         color:black;
     }
-    #call_to_action {
-        display:grid;
-        grid-row-start:1;
-        grid-row-end:2;
-        width:80%;
-        height:100px;
-        margin-left:auto;
-        margin-right:auto;
-        padding: 0;
-        background-color: aliceblue;
-        justify-content: center;
-        align-items: center;
-    }
-    #call_to_action h2{
-        display:grid;
-        font-size:2.5em;
-        font-weight:bold;
-        color:black;
-        margin:0;
-        padding:0;
-    }
+    
     .main-form {
         display:flex;
         flex-direction: column;
@@ -826,6 +806,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
