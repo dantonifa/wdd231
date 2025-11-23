@@ -147,7 +147,7 @@
         margin-left:auto;
         margin-right:auto;
         padding: 0;
-        width: 100%;
+        width: 80%;
         height: auto;
       }
     main #chamber_hero {
@@ -714,6 +714,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
