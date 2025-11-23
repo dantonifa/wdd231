@@ -1,0 +1,285 @@
+@media screen and (min-width: 481px){
+    body {
+        display: grid;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(0, 255, 140, 0.267);
+    }
+    header {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        width: 80%;
+        height: 100px;
+        background-color: rgb(98, 242, 98);
+    }
+    header .heading {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    header .sps_logo_img {
+        display: flex;
+        object-fit: cover;
+        width: 80px;
+        height: auto;
+        padding: 0;
+        margin: 6px 6px 6px 6px;
+    }
+    header .sps_logo_img #sps-logo {
+        display: flex;
+        object-fit: cover;
+        width: auto;
+        height: 80px;
+        padding: 0;
+        margin: 0;
+    }
+    header #sps_logo_text {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    header #sps_logo_text h1 {
+        display: grid;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+        text-align: left;
+        justify-content: left;
+    }
+    .heading h1 {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading p a {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    nav {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 0px;
+        padding: 0;
+        background-color: yellow;
+        width: 80%;
+        height: 80px;
+    }
+    nav ul {
+        display: grid;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 1fr;
+        text-align: center;
+        margin:20px 20px 20px 20px;
+        list-style-type: none;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li a {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li a:hover {
+        color: rgb(98, 242, 98);
+    }
+    nav ul li a:active {
+        color: rgb(98, 242, 98);
+    }
+    main #join-form {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    main #join-form #required, label, input {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        font-size:30px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+    } 
+    main #join-form .membership-level {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        font-size:30px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    main #join-form .membership-level label {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        font-size:25px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    main #join-form .membership-level #membership-options {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width:300px;
+        font-size:25px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    main #join-form #submit_container {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    main #join-form #submit_button {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        font-size:30px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    /*Move the footer below the main content area*/
+  footer {
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        padding: 0;
+        width: 80%;
+        height: auto;
+        font-size:20px;
+        font-weight:bold;
+        background-color: rgb(98, 242, 98);
+    }
+    footer #chamber_address {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #chamber_address p {
+        display: grid;
+        font-size: 1em;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    footer #social_media{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /*place the social icons on the same horizontal line*/
+        /*Separate each icon by 80px*/
+        grid-template-columns: repeat(3, 100px);
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #social_media a {
+        display: grid;
+        width: 80px;
+        height: 80px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    /*Place social media with dimensions of 80px by 80px 
+    on the same horizontal line*/
+    footer #social_media a img {
+        display: grid;
+        width: auto;
+        height: 64px;
+        object-fit: cover;
+    }
+    footer #student_data {
+        display: grid;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    
+}
