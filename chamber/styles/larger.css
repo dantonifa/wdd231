@@ -147,18 +147,18 @@
         margin-left:auto;
         margin-right:auto;
         padding: 0;
-        width: 80%;
+        width: 100%;
         height: auto;
       }
     main #chamber_hero {
         display:grid;
         grid-row-start:1;
         grid-row-end:2;
-        width:80%;
+        width:100%;
         height:300px;
         margin-left:auto;
         margin-right:auto;
-        margin-top:-20px;
+        margin-top:0px;
         margin-bottom:auto;
         padding: 0;
         background-image:  url(../images/sps_landscape.svg);
@@ -196,7 +196,7 @@
         grid-row-end:5;
         margin-left:auto;
         margin-right:auto;
-        margin-top:-40px;
+        margin-top:0px;
         margin-bottom:auto;
         grid-template-rows: 1fr 1fr;
         width:80%;
@@ -714,6 +714,7 @@
         font-weight: bold;
     }
 }
+
 
 
 
