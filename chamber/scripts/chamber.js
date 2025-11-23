@@ -40,8 +40,16 @@ fetch(forecastURL)
     }
     document.getElementById("forecast-days").innerHTML = forecastDays;
   });
-
+  /*place the asterisk *️⃣ before the label text for required fields*/
+  function asterisk() {
+    const requiredFields = document.querySelectorAll("label.req");
+    requiredFields.forEach((label) => {
+      label.innerHTML = "*️⃣ " + label.innerHTML;
+    });
+  }
+  asterisk();
 
   
+
 
 
