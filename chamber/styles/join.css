@@ -137,9 +137,20 @@
     nav ul li a:active {
         color: rgb(98, 242, 98);
     }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0;
+        width: 80%;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.767);
+    }
     main #join-form {
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
         width:80%;
         margin-left:auto;
         margin-right:auto;
@@ -199,20 +210,56 @@
         margin-top:10px;
         margin-bottom:10px;
     }
-    /*Move the footer below the main content area*/
-  footer {
+    main #levels_dialogs {
+        display:grid;
+        grid-column-start:2;
+        grid-column-end:3;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size:30px;
+        font-weight:bold;
+    }
+    main card {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        margin-top:10px;
+        margin-bottom:10px;
+        border:5px;
+        border-color:black;
+        border-style:solid;
+        width:250px;
+        height:auto;
+    }
+    main #levels_dialogs .modal_content 
+            h2, button, p {
+        display:grid;
+        grid-column-start:1;
+        grid-column-end:2;
+        font-size:30px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:10px;
+        border-radius: 5px;
+        width:220px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   footer {
         display: grid;
         grid-row-start: 5;
         grid-row-end: 6;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns:auto auto auto;
         margin-left:auto;
         margin-right:auto;
-        margin-top:auto;
+        margin-top:0px;
         margin-bottom:auto;
         padding: 0;
         width: 80%;
-        height: auto;
-        font-size:20px;
+        height: 300px;
         font-weight:bold;
         background-color: rgb(98, 242, 98);
     }
@@ -220,14 +267,15 @@
         display: grid;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
+        width: 400px;
+        height:300px;
         padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
+        margin-top:20px;
+        /*make the paragraph to fit in one line*/
+        white-space: nowrap;
+        /*align the text to left*/
+        justify-content: start;
+        font-size:30px;
     }
     footer #chamber_address p {
         display: grid;
@@ -244,19 +292,18 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        /*place the social icons on the same horizontal line*/
-        /*Separate each icon by 80px*/
-        grid-template-columns: repeat(3, 100px);
+        white-space: nowrap;
+        margin-top: 30px;
+        margin-left:-180px;
         width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: center;
+        height: fit-content;
+        align-items: justify;
+        justify-content: start;
     }
     footer #social_media a {
         display: grid;
         width: 80px;
         height: 80px;
-        margin: 0 10px;
         text-align: center;
     }
     /*Place social media with dimensions of 80px by 80px 
@@ -276,10 +323,24 @@
         width: auto;
         height: auto;
         padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
+        margin-left: -370px;
+        margin-top: 20px;
+        /*align the text to left*/
+        text-align: left;
+        white-space: nowrap;
+        align-items: left;
+        justify-content: start;
         font-weight: bold;
     }
-    
+    footer #student_data p {
+        display: grid;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        text-align: left;
+        white-space: nowrap;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+    }
 }
