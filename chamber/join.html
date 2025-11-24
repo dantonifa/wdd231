@@ -43,22 +43,22 @@
     <a id="menu" href="#" title="Menu"></a>
     <ul class="nav-link">
       <li>
-        <a href="https://dantonifa.github.io/wdd231/chamber/index.html">
+        <a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd%20231%20web%20fronted%20development%20I/wdd231/chamber/index.html">
             Chamber
         </a>
       </li>
       <li>
-        <a href="https://dantonifa.github.io/wdd231/chamber/directory.html">
+        <a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd%20231%20web%20fronted%20development%20I/wdd231/chamber/directory.html">
             Directory
         </a>
       </li>
       <li>
-        <a href="https://dantonifa.github.io/wdd231/chamber/discover.html">
+        <a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd%20231%20web%20fronted%20development%20I/wdd231/chamber/discover.html">
             Discover
         </a>
       </li>
       <li>
-        <a href="https://dantonifa.github.io/wdd231/chamber/join.html">
+        <a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd%20231%20web%20fronted%20development%20I/wdd231/chamber/join.html">
             Join
         </a>
       </li>
@@ -90,22 +90,56 @@
 
         <label for="business-name" class="req">Business Name</label>
         <input type="text" id="business-name" name="business-name" title="Enter your business name" required autocomplete="organization">
-        
-        <label  for="membership-level" class="req">Membership level</label>
-        <select id="membership-level" name="membership-level" required>
-            <!--let the level input box empty until the user selects an option-->
-            <option value="" disabled selected>Select your membership level</option>
-            <option value="NP">NP Membership</option>
-            <option value="Bronze">Bronze Membership</option>
-            <option value="Silver">Silver Membership</option>
-            <option value="Gold">Gold Membership</option>
-        </select>
-        
-        <div>
+        <div class="membership-level">
+          <label  for="membership-options" class="req">Membership level</label>
+          <select id="membership-options" name="membership-level" required>
+              <!--let the level input box empty until the user selects an option-->
+              <option value="" disabled selected>Select your membership level</option>
+              <option value="NP">NP Membership</option>
+              <option value="Bronze">Bronze Membership</option>
+              <option value="Silver">Silver Membership</option>
+              <option value="Gold">Gold Membership</option>
+          </select>
+        </div>
+        <div id="submit_container">
           <!--Submit button-->
           <button type="submit" id="submit_button">Join us!</button>
         </div>
-      </form>
+    </form>
+    <!--Make dialogs for each membership level with modal buttons:
+    open modal, and close modal-->
+    <div id="levels_dialogs">
+      <card class="modal_content" id="np_content">
+        <h2>NP Membership</h2>
+        <button type="button" class="open_modal" id="open_np">
+          More information
+        </button>
+        <button type="button" class="close_modal" id="close_np">Close</button>
+      </card>
+      <card class="modal_content" id="bronze_content">
+        <h2>Bronze Membership</h2>
+        <button type="button" class="open_modal" id="open_bronze">
+          More information
+        </button>
+        <button type="button" class="close_modal" id="close_bronze">Close</button>
+      </card>
+      <card class="modal_content" id="silver_content">
+        <h2>Silver Membership</h2>
+        <button type="button" class="open_modal" id="open_silver">
+          More information
+        </button>
+        <button type="button" class="close_modal" id="close_silver">Close</button>
+      </card>
+      <card class="modal_content" id="gold_content">
+        <h2>Gold Membership</h2>
+        <button type="button" class="open_modal" id="open_gold">
+          More information
+        </button>
+        <button type="button" class="close_modal" id="close_gold">Close</button>
+      </card>
+    </div>
+      
+    
   </main>
   <footer>
     <div id="chamber_address">
@@ -114,31 +148,31 @@
       <p>San Pedro Sula, Honduras</p>
       <p>Phone: 504-2555-5555</p>
     </div>
-    <!--FB, YouTube, and LinkedIn icons-links-->
     <div id="social_media">
-      <a href="https://www.facebook.com/davidantoniofajardoponce1967/" target="_blank" rel="noopener">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
         <img src="images/facebook_icon.svg" alt="Facebook">
       </a>
-      <a href="https://studio.youtube.com/video/sQWtSItXGRA/edit" target="_blank" rel="noopener">
+      <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
         <img src="images/youtube_icon.svg" alt="YouTube">
       </a>
-      <a href="https://www.linkedin.com/in/david-antonio-fajardo-ponce-778a4266/" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
         <img src="images/linkedin_icon.svg" alt="LinkedIn">
       </a>
     </div>
     <div id="student_data">
       <p>
-        &copy;<span id="currentyear"></span>
+        <span id="currentyear"></span>
         <span>San Pedro Sula Chamber of Commerce</span>
         | David Antonio Fajardo Ponce | WDD 230 Project | 
       </p>
       <p>
-        Last Modified: <span id="lastModified"></span>
+        Last modified: <span id="lastModified"></span>
       </p>
     </div>
   </footer>
 </body>
 </html>
+
 
 
 
