@@ -231,16 +231,19 @@
         margin-left: 6px;
     }
     footer #last_modified {
+        text-align:center;
         margin-top: auto;
         margin-bottom: auto;
         padding-left:15px;
     }
     footer #review_count {
+        text-align:center;
         margin-top: auto;
         margin-bottom: auto;
         padding-left:15px;
     }
 }
+
 
 
 
