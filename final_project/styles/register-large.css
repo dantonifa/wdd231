@@ -1,5 +1,4 @@
 @media screen and (min-width:481px) {
-    body{@media screen and (min-width:481px) {
     body{
     width:60%;
     background-color: #d3f2fd;
@@ -242,6 +241,7 @@
         padding-left:15px;
     }
 }
+
 
 
 
