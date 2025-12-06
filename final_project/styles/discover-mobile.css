@@ -21,7 +21,7 @@
     }
     body header h1{
         display:flex;
-        justify-content:justify;
+        justify-content:center;
         text-align: center;
         width:100%;
         height:auto;
@@ -313,4 +313,5 @@
         font-weight:bold;
         color:black;
     }
+
 }
