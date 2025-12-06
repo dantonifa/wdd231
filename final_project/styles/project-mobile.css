@@ -161,7 +161,10 @@
     }
        
     footer {
+        display:flex;
+        flex-direction: column;
         background-color: turquoise;
+        color:black;
         width: 100%;
         height: auto;
         margin-top: 20px;
@@ -198,4 +201,5 @@
         margin-top:10px;
         margin-bottom:10px;
     }
+
 }
