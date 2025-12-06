@@ -231,7 +231,7 @@
         grid-template-rows:1fr 1fr 1fr;
         width: 100%;
         height: auto;
-        background-color: rgba(249, 10, 209, 0.855);
+        background-color: purple;
         color: white;
         font-size: 30px;
         padding-left:10px;
@@ -294,4 +294,5 @@
         margin-right: auto;
         text-align: center;
     }
+
 }
