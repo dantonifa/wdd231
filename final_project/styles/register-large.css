@@ -15,7 +15,7 @@
         margin-top:auto;
         margin-bottom:auto;
         background-color: #00bcd4;
-        color: white;
+        color: black;
         font-size:25px;
         text-align: center;
     }
@@ -241,4 +241,5 @@
         padding-left:15px;
     }
 }
+
 
