@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Final Project: Instituto Salvador Moncada</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals-David Antonio Fajardo, course assignment portal">
+    <meta name="author" content="David Antonio Fajardo">
+    <link rel="stylesheet" href="styles/discover-large.css">
+    <link rel="stylesheet" href="styles/discover-mobile.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id="ism-logo" src="images/ism-logo.webp" alt="Instituto Privado Salvador Moncada Logo">
+        <h1>
+           INSTITUTO PRIVADO SALVADOR MONCADA
+        </h1>
+        <button id="menu" title="Toggle menu"></button>
+        <nav id="nav-container">
+            <ul>
+                <li><a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd131/project/webpage-project.html">HOME</a></li>
+                <li><a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd131/project/discover.html">DISCOVER</a></li>
+                <li><a href="file:///C:/Users/David%20Antonio/Documents/BYU/wdd131/project/register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Some activities we do in the High School Salvador Moncada
+        </h1>
+
+        <section class="card-1">
+            <div id="card-1-text">
+                <h2>
+                    Science
+                </h2>
+                <p>Students perform experiments, using the microscope to discover the
+                    microscopic living creatures. 
+                </p>
+            </div>
+            <picture id="science">
+                <img src="images/ism-microscope.webp" alt="Science">
+            </picture>
+        </section>
+        <section class="card-2">
+            <div id="card-2-text">
+                <h2>
+                    Patriotism and Arts
+                </h2>
+                <p>We celebrate the Independence Day by marching with the Honduras
+                    flag, accompany by the martial band.
+                </p>
+            </div>
+            <picture id="Independence-day">
+                <img src="images/ism-independence-day.webp" alt="Science">
+            </picture>
+        </section>
+        <section class="card-3">
+            <div id="card-3-text">
+                <h2>
+                    Pickling Industry
+                </h2>
+                <p>Students are taught how to preserve vegetables, by pickling them;
+                    also, they make jam, with tropical fruits like pineapples, mangoes,
+                    and guava. 
+                </p>
+            </div>
+            <picture id="pickling">
+                <img src="images/ism-pickling.webp" alt="Science">
+            </picture>
+        </section>
+        <section class="card-4">
+            <h2>NASA Image Library Search</h2>
+<input type="text" id="search-input" placeholder="Enter search term (e.g., 'nebula', 'mars')" value="Orion Nebula">
+<button onclick="handleImageSearch()">Search Images</button>
+<div id="image-results">
+    <!-- Image cards will be inserted here -->
+</div>
+        </section>
+    </main>
+    <footer>
+        <div id="flag-container">
+            <div id="text">
+                <p>
+                    &copy;<span id="currentyear"></span>| David Antonio Fajardo Ponce | Honduras
+                </p>
+            </div>
+            <div id="flag">
+                <img src = "images/Honduras_flag.webp" alt = "Honduras Flag">
+            </div>
+        </div>
+        <div id="last_modified">
+            <p>
+            Last Modified: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
