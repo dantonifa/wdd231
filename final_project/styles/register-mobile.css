@@ -152,8 +152,8 @@
         text-align: center;
     }
     footer {
-        display: grid;
-        grid-template-rows:1fr 1fr;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
         background-color: rgba(249, 10, 209, 0.855);
