@@ -209,11 +209,7 @@
         padding-bottom:15px;
         margin-bottom:15px;
     }
-    footer #flag-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%; body footer {
+    body footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         width: 100%;
@@ -321,6 +317,7 @@
         text-align: center;
     }
 }
+
 
 
 
