@@ -226,7 +226,19 @@
         overflow:hidden;
         font-size: 30px;
     }
-      body footer {
+      footer {
+        display: grid;
+        grid-template-rows:1fr 1fr;
+        width: 100%;
+        height: auto;
+        background-color: purple;
+        color: white;
+        font-size: 30px;
+        margin-top: 20px;
+        padding-bottom:15px;
+        margin-bottom:15px;
+    }
+    body footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         width: 100%;
@@ -334,5 +346,6 @@
         text-align: center;
     }
 }
+
 
 
