@@ -50,7 +50,6 @@
         font-size:20px;
         font-weight:bold;
     }
-    
     body header #nav-container ul{
        display:inline-flex;
         list-style-type:none;
@@ -248,6 +247,7 @@
     }
     main .card-4 #search-container #search-button:hover{
         background-color: rgb(21, 207, 231);
+    }
     body footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
@@ -356,6 +356,7 @@
         text-align: center;
     }
 }
+
 
 
 
