@@ -1,9 +1,12 @@
 /* JavaScript for Responsive Navigation Menu */
-const hamburgerButton = document.getElementById("menu");
-const navMenu = document.querySelector("body header nav ul");
-hamburgerButton.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-  hamburgerButton.classList.toggle("open");
+//Wait until the entire HTML document is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerButton = document.getElementById("menu");
+  const navMenu = document.querySelector("#nav-container");
+  hamburgerButton.addEventListener("click", () => {
+    navMenu.classList.toggle("is-open");
+    hamburgerButton.classList.toggle("open");
+  });
 });
 /*end of responsive navigation menu code*/
 /*Use localStorage to keep track of the number of reviews completed by the user client by adding a counter 
@@ -65,4 +68,5 @@ searchButton.addEventListener("click", () => {
 });
 /*End of code to display books after clicking search button
 using Open Library API*/
+
 
