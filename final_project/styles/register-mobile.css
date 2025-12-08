@@ -2,24 +2,93 @@
     body{
         background-color:rgba(0, 255, 140, 0.267);
     }
+
     header{
         padding: 1rem;
         background-color: turquoise;
+
     }
-    header #ism-logo {
-        width: 70px;
-        height: auto;
-        contain:content;
+    /*Reduce logo size and center it*/
+    header img{
+        display:flex;
+        width:120px;
+        margin-top:auto;
+        margin-bottom:auto;
+        height:auto;
+        object-fit:fill;
+        margin-left: auto;
+        margin-right: auto;
     }
     header h1{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:auto;
+        object-fit:fill;
+        text-align: center;
         color:black;
         font-size:25px;
         font-weight:bold;
+        margin-top:auto;
+        margin-bottom:auto;
+        margin: 0;
+        padding: 10px;
     }
-    nav{
+    /*do not show the nav by default*/
+    body header #menu {
+        display: block;
+        background-color: yellow;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        cursor: pointer;
+    }
+    body header #nav-container.is-open {
+        display: block; /* Change from 'none' to 'block' (or flex/grid) when the class is present */
+        /* Add any transition or positioning styles here */
+    }
+    body header #menu::before{
+        display:block;
+        content:"☰";
+        font-size:30px;
+        color:black;
+        text-align:center;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100%;
+    }
+    body header #menu.open::before{
+        content:"✖";
+        font-size:30px;
+        color:black;
+        text-align:center;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100%;
+    }
+    body header #nav-container {
+        display:none;
         padding: 1rem;
+        margin-left:auto;
+        margin-right:auto;
     }
-    nav ul{
+    body header #nav-container ul{
+        background-color: aliceblue;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -30,6 +99,28 @@
         font-weight: bold;
         line-height:2;
     }
+    body header #nav-container ul li{
+        margin-bottom: 10px;
+    }
+    body header #nav-container ul li a{
+        text-decoration: none;
+        color:black;
+    }
+    
+    body header #nav-container ul li a:hover{
+        background-color: rgba(255, 0, 140, 0.267);
+        color:purple;
+        cursor:pointer;
+    }
+   
+    body header #nav-container ul.open {
+        display: block;
+    }
+
+    body header #nav-container a:hover {
+        background-color: rgba(59, 240, 23, 0.841);
+    }
+
     main{
         display:flex;
         flex-direction: column;
@@ -152,16 +243,17 @@
         text-align: center;
     }
     footer {
-        display: flex;
+        display:flex;
         flex-direction: column;
+        background-color: turquoise;
+        color:black;
         width: 100%;
         height: auto;
-        background-color: rgba(249, 10, 209, 0.855);
-        color: white;
-        font-size: 30px;
         margin-top: 20px;
-        padding-bottom:15px;
-        margin-bottom:15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
     }
     footer #flag-container {
         display: flex;
@@ -175,23 +267,21 @@
         float: right;
         margin-top: auto;
         margin-bottom: auto;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
     }
     footer img {
         display: flex;
-        float: right;
-        resize: both;
+        justify-content: center;
+        align-items: center;
         width: 100px;
         height: auto;
-        margin-left: 6px;
-    }
-    footer #last_modified {
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-left:15px;
-    }
-    footer #review_count {
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-left:15px;
+        contain:content;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+        margin-bottom:10px;
     }
 }
+
