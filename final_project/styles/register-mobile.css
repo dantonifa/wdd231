@@ -6,7 +6,6 @@
     header{
         padding: 1rem;
         background-color: turquoise;
-
     }
     /*Reduce logo size and center it*/
     header img{
@@ -35,6 +34,10 @@
         margin: 0;
         padding: 10px;
     }
+    body header #nav-container.is-open {
+        display: block; /* Change from 'none' to 'block' (or flex/grid) when the class is present */
+        /* Add any transition or positioning styles here */
+    }
     /*do not show the nav by default*/
     body header #menu {
         display: block;
@@ -47,10 +50,6 @@
         margin-top: auto;
         margin-bottom: auto;
         cursor: pointer;
-    }
-    body header #nav-container.is-open {
-        display: block; /* Change from 'none' to 'block' (or flex/grid) when the class is present */
-        /* Add any transition or positioning styles here */
     }
     body header #menu::before{
         display:block;
@@ -106,21 +105,14 @@
         text-decoration: none;
         color:black;
     }
-    
     body header #nav-container ul li a:hover{
         background-color: rgba(255, 0, 140, 0.267);
         color:purple;
         cursor:pointer;
     }
-   
-    body header #nav-container ul.open {
-        display: block;
-    }
-
     body header #nav-container a:hover {
         background-color: rgba(59, 240, 23, 0.841);
     }
-
     main{
         display:flex;
         flex-direction: column;
@@ -284,4 +276,5 @@
         margin-bottom:10px;
     }
 }
+
 
