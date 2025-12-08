@@ -7,6 +7,7 @@
     header{
         padding: 1rem;
         background-color: turquoise;
+
     }
     /*Reduce logo size and center it*/
     header img{
@@ -35,7 +36,12 @@
         margin: 0;
         padding: 10px;
     }
-     body header #menu {
+    body header #nav-container.is-open {
+        display: block; /* Change from 'none' to 'block' (or flex/grid) when the class is present */
+        /* Add any transition or positioning styles here */
+    }
+    /*do not show the nav by default*/
+    body header #menu {
         display: block;
         background-color: yellow;
         width: 50px;
@@ -48,6 +54,7 @@
         cursor: pointer;
     }
     body header #menu::before{
+        display:block;
         content:"☰";
         font-size:30px;
         color:black;
@@ -76,14 +83,18 @@
         height:100%;
     }
     body header #nav-container {
+        display:none;
         padding: 1rem;
+        margin-left:auto;
+        margin-right:auto;
+       
     }
     body header #nav-container ul{
         background-color: aliceblue;
         display:flex;
         flex-direction: column;
         justify-content: center;
-        list-style-type:none;
+        list-style-type:flex;
         margin-left:auto;
         margin-right:auto;
         font-size: 25px;
@@ -104,18 +115,9 @@
         cursor:pointer;
     }
    
-    body header #nav-container ul {
-        display: none;
-    }
-    body header #nav-container ul.open {
-        display: block;
-    }
-
     body header #nav-container a:hover {
         background-color: rgba(59, 240, 23, 0.841);
     }
-
-
 
     body main{
         display:flex;
@@ -159,7 +161,6 @@
         border: 2px solid black;
         border-radius: 10px;
     }
-       
     footer {
         display:flex;
         flex-direction: column;
@@ -201,5 +202,5 @@
         margin-top:10px;
         margin-bottom:10px;
     }
-
 }
+
