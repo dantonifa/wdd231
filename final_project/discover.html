@@ -11,17 +11,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="David Antonio Fajardo Ponce - WDD 231 - Web Frontend Development I">
     <meta property="og:type" content="website">
+    <!--Provide an property="og:image" content value that is an absolute URL that is located in the repository.-->
     <meta property="og:image" content="https://dantonifa.github.io/wdd231/final_project/images/ism-logo.webp">
+    <!-- og description -->
     <meta property="og:description" content="WDD 231 - Web Frontend Development, David Antonio Fajardo Ponce,
                         course assignment portal">
+    <!-- Provide an property="og:url" content value that is an absolute URL. -->
     <meta property="og:url" content="https://dantonifa.github.io/wdd231/final_project/discover.html">
     <meta name="description" content="WDD 131: Dynamic Web Fundamentals-David Antonio Fajardo, course assignment portal">
     <meta name="author" content="David Antonio Fajardo">
-    <link rel="icon" href="/final_project/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/discover-large.css">
     <link rel="stylesheet" href="styles/discover-mobile.css">
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/project.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
         <nav id="nav-container">
             <ul>
                 <li><a href="webpage-project.html">HOME</a></li>
-                <li><a href="final_project">DISCOVER</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
                 <li><a href="register.html">REGISTER</a></li>
             </ul>
         </nav>
@@ -84,12 +86,14 @@
             </picture>
         </section>
         <section class="card-4">
-            <h2>NASA Image Library Search</h2>
-<input type="text" id="search-input" placeholder="Enter search term (e.g., 'nebula', 'mars')" value="Enter search term (e.g., 'nebula', 'mars')">
-<button>Search Images</button>
-<div id="image-results">
-    <!-- Image cards will be inserted here -->
-</div>
+            <h2>Book Search (Open Library)</h2>
+
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Enter a science topic (e.g., biology, physics)">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="results-container"></div>
+            <!-- Search results will be displayed here -->
         </section>
     </main>
     <footer>
@@ -100,7 +104,7 @@
                 </p>
             </div>
             <div id="flag">
-                <img src ="images/honduras_flag.webp" alt ="Honduras Flag">
+                <img src = "images/Honduras_flag.webp" alt = "Honduras Flag">
             </div>
         </div>
         <div id="last_modified">
@@ -109,9 +113,10 @@
             </p>
         </div>
     </footer>
+    <script src="scripts/project.js"></script>
 </body>
-
 </html>
+
 
 
 
