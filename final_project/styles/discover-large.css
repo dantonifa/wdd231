@@ -248,7 +248,7 @@
     }
     main .card-4 #search-container #search-button:hover{
         background-color: rgb(21, 207, 231);
-      body footer {
+    body footer {
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
         width: 100%;
@@ -356,6 +356,7 @@
         text-align: center;
     }
 }
+
 
 
 
