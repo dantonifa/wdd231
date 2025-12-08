@@ -257,8 +257,8 @@
         color: black;
         font-weight: bold;
         font-size: 30px;
-        padding-left:10px;
-        padding-right:10px;
+        margin-left:auto;
+        margin-right:auto;
         border: 2px solid black;
         border-radius: 10px;
         margin-top:0px;
@@ -356,6 +356,7 @@
         text-align: center;
     }
 }
+
 
 
 
